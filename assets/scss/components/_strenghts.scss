@@ -1,0 +1,129 @@
+.strenghts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        &Image {
+            width: 100%;
+            height: toRem(305);
+            background-image: url('../../assets/images/mobile/image-transform.jpg');
+            background-size: cover;
+            background-position: center;
+
+            &.secondItemImage {
+                background-image: url('../../assets/images/mobile/image-stand-out.jpg');
+            }
+        }
+
+        &Text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            margin: toRem(50) 0;
+
+            &Container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;   
+                width: 90%;
+                max-width: toRem(337);
+            }
+
+            &Header {
+                font-size: toRem(30);
+                font-family: $headerFont;
+                color: $vddBlue;
+                margin-bottom: toRem(20);
+                max-width: toRem(337);
+
+                &.secondItemHeader{
+                    width: 90%;
+                }
+            }
+
+            &Paragraph {
+                font-size: toRem(17);
+                font-family: $textFont;
+                color: $dgBlue;
+                margin-bottom: toRem(30);
+            }
+
+            &Link {
+                text-decoration: underline toRem(3) $yellow;
+                color: $vddBlue;
+                font-family: $headerFont;
+
+                &.secondItemLink {
+                    text-decoration: underline toRem(3) $softRed;
+                }
+            }
+        }
+    }
+}
+
+// Breakpoints 
+
+@media(min-width: $break550) {
+    .strenghts__itemImage {
+        height: toRem(430);
+    }
+}
+
+@media (min-width: $breakTablet) {
+    .strenghts__itemImage {
+        height: toRem(500);
+    }
+}
+
+@media (min-width: $break960) {
+    .strenghts__item {
+        flex-direction: row-reverse;
+
+        &.secondItem {
+            flex-direction: row;
+        }
+        
+        &Image {
+            background-image: url('../../assets/images/desktop/image-transform.jpg');
+            width: 50%;
+            height: toRem(400);
+
+            &.secondItemImage {
+                background-image: url('../../assets/images/desktop/image-stand-out.jpg');
+            }
+        }
+
+        &Text {
+            width: 50%;
+            align-items: center;
+
+            &Container {
+                align-items: flex-start;
+                text-align: left;
+            }
+
+            &Header {
+                font-size: toRem(25);
+                width: 60%;
+
+                &.secondItemHeader {
+                    width: 80%;
+                }
+            }
+
+            &Paragraph {
+                font-size: toRem(16);
+                width: 100%;
+            }
+
+        }
+    }
+}
