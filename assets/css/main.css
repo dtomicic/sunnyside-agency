@@ -218,8 +218,7 @@
   }
 }
 
-.transform {
-  width: 100%;
+.strenghts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,17 +226,38 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.transform__pictureSectionItem {
+.strenghts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
-.transform__pictureSectionItem.desktop {
-  display: none;
+.strenghts__itemImage {
+  width: 100%;
+  height: 19.0625rem;
+  background-image: url("../../assets/images/mobile/image-transform.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-.transform__textSection {
+.strenghts__itemImage.secondItemImage {
+  background-image: url("../../assets/images/mobile/image-stand-out.jpg");
+}
+
+.strenghts__itemText {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,10 +269,11 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin-top: 3.125rem;
+  width: 100%;
+  margin: 3.125rem 0;
 }
 
-.transform__textSectionItem {
+.strenghts__itemTextContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,72 +284,96 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 90%;
+  max-width: 21.0625rem;
 }
 
-.transform__textSectionHeader {
+.strenghts__itemTextHeader {
+  font-size: 1.875rem;
   font-family: "Fraunces";
-  font-size: 2.1875rem;
   color: #23303e;
-  margin-bottom: 1.5625rem;
-  max-width: 23.4375rem;
+  margin-bottom: 1.25rem;
+  max-width: 21.0625rem;
 }
 
-.transform__textSectionParagraph {
+.strenghts__itemTextHeader.secondItemHeader {
+  width: 90%;
+}
+
+.strenghts__itemTextParagraph {
+  font-size: 1.0625rem;
   font-family: "Barlow";
-  color: #a7abae;
-  font-weight: 700;
-  font-size: 1.125rem;
+  color: #818498;
   margin-bottom: 1.875rem;
-  width: 85%;
-  max-width: 23.4375rem;
 }
 
-.transform__textSectionLink {
-  font-family: "Fraunces";
-  color: #23303e;
+.strenghts__itemTextLink {
   -webkit-text-decoration: underline 0.1875rem #fad400;
           text-decoration: underline 0.1875rem #fad400;
-  margin-bottom: 3.125rem;
+  color: #23303e;
+  font-family: "Fraunces";
 }
 
-@media (min-width: 1440px) {
-  .transform {
+.strenghts__itemTextLink.secondItemLink {
+  -webkit-text-decoration: underline 0.1875rem #fe7867;
+          text-decoration: underline 0.1875rem #fe7867;
+}
+
+@media (min-width: 550px) {
+  .strenghts__itemImage {
+    height: 26.875rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .strenghts__itemImage {
+    height: 31.25rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .strenghts__item {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
-  .transform__pictureSection {
+  .strenghts__item.secondItem {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .strenghts__itemImage {
+    background-image: url("../../assets/images/desktop/image-transform.jpg");
     width: 50%;
+    height: 25rem;
   }
-  .transform__pictureSectionItem {
-    display: none;
+  .strenghts__itemImage.secondItemImage {
+    background-image: url("../../assets/images/desktop/image-stand-out.jpg");
   }
-  .transform__pictureSectionItem.desktop {
-    display: block;
-    width: 100%;
-  }
-  .transform__textSection {
+  .strenghts__itemText {
     width: 50%;
-    text-align: left;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
-  .transform__textSectionItem {
+  .strenghts__itemTextContainer {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    text-align: left;
   }
-  .transform__textSectionHeader {
-    font-size: 2.8125rem;
+  .strenghts__itemTextHeader {
+    font-size: 1.5625rem;
+    width: 60%;
   }
-  .transform__textSectionParagraph {
-    font-size: 1.25rem;
-    max-width: 28.125rem;
+  .strenghts__itemTextHeader.secondItemHeader {
+    width: 80%;
+  }
+  .strenghts__itemTextParagraph {
+    font-size: 1rem;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
