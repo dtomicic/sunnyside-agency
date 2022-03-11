@@ -511,4 +511,94 @@
     top: 28.125rem;
   }
 }
+
+.testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-top: 3.125rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonials__header {
+  font-family: "Fraunces";
+  letter-spacing: 0.3125rem;
+  color: #a7abae;
+  margin-bottom: 3.125rem;
+}
+
+.testimonials__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5.625rem;
+  margin-bottom: 4.375rem;
+}
+
+.testimonials__containerItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 23.4375rem;
+}
+
+.testimonials__containerItemPicture {
+  border-radius: 6.25rem;
+  width: 20%;
+  margin-bottom: 1.5625rem;
+}
+
+.testimonials__containerItemParagraph {
+  font-family: "Barlow";
+  text-align: center;
+  width: 90%;
+  font-size: 1.1875rem;
+  line-height: 1.875rem;
+  color: #5a636c;
+  margin-bottom: 1.5625rem;
+}
+
+.testimonials__containerItemName {
+  font-family: "Fraunces";
+  color: #23303e;
+  margin-bottom: 0.9375rem;
+}
+
+.testimonials__containerItemPosition {
+  font-family: "Barlow";
+  color: #a7abae;
+  font-size: 0.9375rem;
+}
+
+@media (min-width: 1440px) {
+  .testimonials__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 3.75rem;
+    margin-bottom: 6.25rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */
