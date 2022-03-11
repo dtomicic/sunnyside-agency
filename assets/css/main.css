@@ -217,4 +217,118 @@
     display: none;
   }
 }
+
+.transform {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.transform__pictureSectionItem {
+  width: 100%;
+}
+
+.transform__pictureSectionItem.desktop {
+  display: none;
+}
+
+.transform__textSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 3.125rem;
+}
+
+.transform__textSectionItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.transform__textSectionHeader {
+  font-family: "Fraunces";
+  font-size: 2.1875rem;
+  color: #23303e;
+  margin-bottom: 1.5625rem;
+  max-width: 23.4375rem;
+}
+
+.transform__textSectionParagraph {
+  font-family: "Barlow";
+  color: #a7abae;
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 1.875rem;
+  width: 85%;
+  max-width: 23.4375rem;
+}
+
+.transform__textSectionLink {
+  font-family: "Fraunces";
+  color: #23303e;
+  -webkit-text-decoration: underline 0.1875rem #fad400;
+          text-decoration: underline 0.1875rem #fad400;
+  margin-bottom: 3.125rem;
+}
+
+@media (min-width: 1440px) {
+  .transform {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .transform__pictureSection {
+    width: 50%;
+  }
+  .transform__pictureSectionItem {
+    display: none;
+  }
+  .transform__pictureSectionItem.desktop {
+    display: block;
+    width: 100%;
+  }
+  .transform__textSection {
+    width: 50%;
+    text-align: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .transform__textSectionItem {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .transform__textSectionHeader {
+    font-size: 2.8125rem;
+  }
+  .transform__textSectionParagraph {
+    font-size: 1.25rem;
+    max-width: 28.125rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */
