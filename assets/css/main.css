@@ -601,4 +601,44 @@
     margin-bottom: 6.25rem;
   }
 }
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.gallery__collection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallery__image {
+  width: 50%;
+}
+
+.gallery__image.desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .gallery__image {
+    display: none;
+  }
+  .gallery__image.desktop {
+    display: block;
+  }
+}
 /*# sourceMappingURL=main.css.map */
